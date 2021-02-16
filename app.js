@@ -3,15 +3,18 @@
 api_Url =
   document.location.hostname === "localhost"
     ? "http://localhost:8080/parks.json"
-    : "https://np-mobile-app.netlify.app/parks.json";
+    : "https://np-mobile-app-version2.netlify.app/parks.json";
 
-fetch(`${api_Url}`, {
-  headers: {
-    Accept: "application/json",
-    "Content-Type": "application/x-www-form-urlencoded",
-    "Access-Control-Allow-Origin": `http://localhost:8080/parks.json`,
-  },
-})
+fetch(
+  `${api_Url}`
+  // , {
+  // headers: {
+  //   Accept: "application/json",
+  //   "Content-Type": "application/x-www-form-urlencoded",
+  //   "Access-Control-Allow-Origin": `http://localhost:8080/parks.json`,
+  // },
+  // }
+)
   .then((response) => {
     return response.json();
   })
