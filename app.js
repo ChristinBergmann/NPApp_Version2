@@ -26,9 +26,8 @@ fetch(`${api_Url}`, {
 
     for (let i = 0; i < data.length; i++) {
       for (let x = 0; x < data[i].images.length; x++) {
-        let a = document.createElement("figure");
-        a.setAttribute("class", "carousel-item");
-
+        let carouselItem = document.createElement("figure");
+        carouselItem.setAttribute("class", "carousel-item");
         let parkName = document.createElement("figcaption");
         parkName.setAttribute("id", data[i].id);
         parkName.setAttribute("class", "imgCaption");
@@ -50,13 +49,13 @@ fetch(`${api_Url}`, {
         // base64 encoded url:
         // "http://localhost:8081/signature/auto/200/0/sm/0/" + btoa(result.data[i].images[x].url);
 
-        a.appendChild(img);
-        a.appendChild(parkName);
-        a.appendChild(parkState);
-        carousel.appendChild(a);
+        carouselItem.appendChild(img);
+        carouselItem.appendChild(parkName);
+        carouselItem.appendChild(parkState);
+        carousel.appendChild(carouselItem);
       }
     }
-    // M.AutoInit(); // for maps of location- not implemented yet
+    M.AutoInit(); // calls the carousel
     filterParkListDiv(data);
   })
   .catch(function (error) {
@@ -108,12 +107,12 @@ function buildParkListDiv(data) {
   if (!data.length) {
     // Error Message Div:
     let parkListError = document.getElementById("errorDiv");
-    parkListError.setAttribute("class", "container");
+    parkListError.setAttribute("class", "contextErrorInfo");
     parkListError.innerHTML = "";
     let listError = document.createElement("p");
     listError.innerHTML = "Check Typing  -OR-  No Parks listed";
     let listError1 = document.createElement("p");
-    listError1.setAttribute("class", "errorText blue-text accent-3");
+    listError1.setAttribute("class", "errorText blue-text darken-3");
     listError1.innerHTML =
       "-->>  use link above of official NPS Homepage  <<--";
 

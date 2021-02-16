@@ -23,10 +23,8 @@ body {
 }
 
 /* main {
-  background-color: aliceblue;
-  position: relative;
   margin: 0 auto;
-  min-height: calc(100vh - 414px - 77px);
+  min-height: calc(100vh - 200px - 21px);
 } */
 
 /***------------------------- NAV BAR + HEADER ------------------***/
@@ -93,7 +91,6 @@ h2 {
 
 h4 {
   font-size: 1vw;
-  /* text-shadow: 3px 2px 2px rgb(136, 134, 134); */
   margin-top: 7vh;
 }
 
@@ -139,19 +136,11 @@ i:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
-}
-
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: fit-content;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 /*---------------- first page style ------------*/
-
 .carousel div {
   display: flex;
   justify-content: center;
@@ -167,39 +156,41 @@ i:hover {
   cursor: pointer;
 }
 
-#searchContainer {
-  position: relative;
-  vertical-align: 50%;
+.searchContainer {
+  display: flex;
+  width: 310px;
   margin: 10px 5px 10px 5px;
+  padding: 5px 15px;
+  background-color: rgb(215, 183, 142, 0.5);
   border-bottom: none;
 
   visibility: visible;
 }
 
-#searchContainer input {
+.searchContainer input {
   width: 260px;
-  font-weight: 600;
-  color: rgb(12, 92, 187);
+  border-radius: 5%;
+  font-weight: 800;
+  color: #fff;
   text-align: center;
   border-bottom: 1px solid rgb(234, 250, 8);
   text-transform: uppercase;
 }
 
-/* #searchInput input:active {
-  border: none;
-  box-shadow: 2px 3px rgb(234, 250, 8);
-} */
-
-#searchButton {
+.searchContainer button {
+  height: 40px;
   color: white;
   border-radius: 5px;
   border: none;
   box-shadow: 2px 3px rgb(234, 250, 8);
 }
 
+#searchInput {
+  border-bottom: 1px solid rgb(234, 250, 8);
+}
+
 #errorDiv {
   width: auto;
-  /* max-height: 300px;  */
   margin: 30px;
   padding: 10px 20px;
   position: relative;
@@ -220,10 +211,7 @@ i:hover {
 }
 
 #dropdownList {
-  /* max-width: auto;
-  max-height: 300px; */
   margin: 20px 30px;
-
   background-color: rgba(20, 20, 20, 0.3);
   box-shadow: 2px 2px 5px black;
   padding: 10px 30px;
@@ -268,20 +256,37 @@ i:hover {
 
 .contextInfo {
   margin: 10px 30px;
-  position: relative;
   text-align: center;
   overflow: auto;
   background-color: rgba(20, 20, 20, 0.6);
   box-shadow: 2px 2px 5px black;
-  padding: 15px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .secondPageBTNs {
   padding: 0px 20px 0px 20px;
 }
 
+/*------------- third page style ------*/
+.contextInfoDirections {
+  margin: 100px 30px 10px;
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.6);
+  box-shadow: 2px 2px 5px black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 /*--------------- fourth page style  ---------------*/
+.contextErrorInfo {
+  margin: 100px 30px 10px;
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.6);
+  box-shadow: 2px 2px 5px black;
+  padding: 10px;
+  border-radius: 5px;
+}
 
 .campDiv {
   margin: 20px;
@@ -316,16 +321,12 @@ i:hover {
 
 /*------------footer--------------*/
 .footer-copyright {
-  position: absolute;
-  margin-left: 10%;
-  /* bottom: 0; */
-  bottom: -100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(215, 183, 142, 0.5);
+  bottom: 0;
 }
-
-/* .copyright {
-  display: flex;
-  justify-content: center;
-} */
 
 /*------------------- Media Queries ----------------*/
 /* iphone 3 */

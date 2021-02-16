@@ -37,7 +37,7 @@
     </div>
   </header>
 
-  <main class="centered">
+  <main>
     <div class="user" id="user">
     </div>
     <div class="chatPage" id="chatPage">
@@ -45,8 +45,8 @@
     <div class="firstPage active" id="firstPage">
       <div alt="Images of National Parks" id="carouselID" class="carousel">
       </div>
-      <div id="searchContainer">
-        <input class="search" type="text" placeholder="search by                   State Code" id="searchInput" spellcheck="true">
+      <div class="searchContainer">
+        <input class="search" type="text" placeholder="search by   State Code" id="searchInput" spellcheck="true" pattern="[A-Za-z]{2}">
         <button class="search" id="searchButton">GO</button>
       </div>
       <div id="dropdownList"></div>
@@ -62,7 +62,7 @@
 
   <footer>
     <div class="footer-copyright">
-        <p class="copyright">&copy;Christin`s NPS Mobile App || 2020</p>
+        <p>&copy;Christin`s NPS Mobile App || 2020</p>
     </div>
   </footer>
 
