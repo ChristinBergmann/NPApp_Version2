@@ -78,8 +78,6 @@ function filterParkListDiv(parks) {
     buildParkListDiv(filteredList);
 
     document.getElementById("headline").style.visibility = "hidden";
-    document.getElementsByClassName("footer-copyright").style.visibility =
-      "hidden";
   });
 }
 
