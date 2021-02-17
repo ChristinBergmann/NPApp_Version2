@@ -29,8 +29,8 @@ fetch(`${api_Url}`)
           filterContentParkList(data, event);
         });
 
-        let parkState = document.createElement("p");
-        parkState.innerHTML = data[i].states;
+        let parkType = document.createElement("p");
+        parkType.innerHTML = "(" + data[i].designation + ")";
 
         // work around bc no backend for imgs:
         let img = document.createElement("img");
@@ -44,7 +44,7 @@ fetch(`${api_Url}`)
 
         carouselItem.appendChild(img);
         carouselItem.appendChild(parkName);
-        carouselItem.appendChild(parkState);
+        carouselItem.appendChild(parkType);
         carousel.appendChild(carouselItem);
       }
     }
