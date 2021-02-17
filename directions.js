@@ -6,7 +6,7 @@ function buildThirdPage(parks) {
 
   // Park Direction:
   let divHead = document.createElement("div");
-  divHead.setAttribute("class", "contextInfo");
+  divHead.setAttribute("class", "contextInfoDirections");
   let headMaps = document.createElement("h2");
   headMaps.innerHTML = "Direction:";
   let contextMaps = document.createElement("div");
@@ -24,7 +24,7 @@ function buildThirdPage(parks) {
   let mapsLink = document.createElement("a");
   mapsLink.setAttribute("href", parks.directionsUrl);
   mapsLink.setAttribute("target", "_blank");
-  mapsLink.innerHTML = "More Info for directions";
+  mapsLink.innerHTML = "More Info";
 
   // BACK button:
   let backButton2 = document.createElement("div");

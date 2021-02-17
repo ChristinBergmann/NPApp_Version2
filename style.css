@@ -279,7 +279,7 @@ i:hover {
 }
 
 /*--------------- fourth page style  ---------------*/
-.contextErrorInfo {
+.contextInfoError {
   margin: 100px 30px 10px;
   text-align: center;
   background-color: rgba(20, 20, 20, 0.6);
