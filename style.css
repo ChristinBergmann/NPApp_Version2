@@ -284,7 +284,7 @@ i:hover {
   text-align: center;
   background-color: rgba(20, 20, 20, 0.6);
   box-shadow: 2px 2px 5px black;
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 5px;
 }
 
@@ -322,7 +322,7 @@ i:hover {
 /*------------footer--------------*/
 .footer-copyright {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 600px;
   color: black;
   text-align: center;
   bottom: 0;
