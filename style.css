@@ -274,7 +274,6 @@ i:hover {
 
 .campDiv {
   margin: 20px;
-  /* padding: 10px 10px; */
   border-radius: 15px;
 
   background-color: rgba(20, 20, 20, 0.6);
@@ -294,8 +293,8 @@ i:hover {
 #backBTN {
   font-optical-sizing: auto;
   font-size: 1vw;
-  border-radius: 4px;
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 #button {
@@ -307,9 +306,9 @@ i:hover {
 /*------------footer--------------*/
 .footer-copyright {
   width: 100%;
-  margin-top: 600px;
   color: black;
   text-align: center;
+  margin-top: 600px;
   bottom: 0;
 }
 
