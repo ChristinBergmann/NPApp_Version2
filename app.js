@@ -29,7 +29,7 @@ fetch(`${api_Url}`)
           filterContentParkList(data, event);
         });
 
-        let parkType = document.createElement("p");
+        let parkType = document.createElement("figcaption");
         parkType.innerHTML = "(" + data[i].designation + ")";
 
         // work around bc no backend for imgs:
@@ -104,10 +104,13 @@ function buildParkListDiv(data) {
     parkListError.innerHTML = "";
     let listError = document.createElement("p");
     listError.innerHTML = "Check Typing  -OR-  No Parks listed";
-    let listError1 = document.createElement("p");
+    let listError1 = document.createElement("a");
     listError1.setAttribute("class", "errorText blue-text darken-3");
-    listError1.innerHTML =
-      "-->>  use link above of official NPS Homepage  <<--";
+    listError1.setAttribute("href", "http://nps.gov");
+    listError1.setAttribute("target", "_blank");
+    listError1.innerHTML = "Look at official homepage";
+
+    // listError1.src = "-->>" + "http://nps.gov" + "<<--";
 
     parkListError.appendChild(listError);
     parkListError.appendChild(listError1);
