@@ -26,7 +26,7 @@ function buildFourthPage(event, parkCode) {
       if (data == 0) {
         // Error Div:
         let divErrorCamp = document.createElement("div");
-        divErrorCamp.setAttribute("class", "contextInfoDirections");
+        divErrorCamp.setAttribute("class", "contextInfoError");
         divErrorCamp.innerHTML = "Sorry there are no campgrounds listed";
 
         // BACK button:
