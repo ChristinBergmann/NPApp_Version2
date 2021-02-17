@@ -8,7 +8,7 @@ function buildThirdPage(parks) {
   let divHead = document.createElement("div");
   divHead.setAttribute("class", "contextInfoDirections");
   let headMaps = document.createElement("h2");
-  headMaps.innerHTML = "Direction:";
+  headMaps.innerHTML = "Directions:";
   let contextMaps = document.createElement("div");
   contextMaps.setAttribute("class", "contextDiv");
   contextMaps.innerHTML = parks.directionsInfo;

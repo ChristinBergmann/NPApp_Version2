@@ -14,11 +14,6 @@ body {
   color: white;
 }
 
-/* main {
-  margin: 0 auto;
-  min-height: calc(100vh - 200px - 21px);
-} */
-
 /***------------------------- NAV BAR + HEADER ------------------***/
 .icon-white {
   color: white;
@@ -54,31 +49,31 @@ body {
 }
 
 .header h1 {
-  text-shadow: 2px 2px 3px rgb(4, 51, 134);
   margin-top: 9vh;
+  text-shadow: 2px 2px 3px rgb(4, 51, 134);
 }
 
 .header h2 {
-  text-shadow: 2px 2px 3px rgb(4, 51, 134);
   margin-top: 6vh;
+  text-shadow: 2px 2px 3px rgb(4, 51, 134);
 }
 
 .header h4 {
   font-size: 2vw;
-  text-shadow: 2px 2px 3px rgb(4, 51, 134);
   margin-top: 7vh;
+  text-shadow: 2px 2px 3px rgb(4, 51, 134);
 }
 
 h1 {
   font-size: 5vw;
-  text-shadow: 3px 3px 5px rgb(136, 134, 134);
   margin-top: 6vh;
+  text-shadow: 3px 3px 5px rgb(136, 134, 134);
 }
 
 h2 {
   font-size: 3vw;
-  text-shadow: 3px 2px 2px rgb(136, 134, 134);
   margin-top: 2vh;
+  text-shadow: 3px 2px 2px rgb(136, 134, 134);
 }
 
 h4 {
@@ -153,27 +148,27 @@ i:hover {
   width: 310px;
   margin: 60px 5px 10px 5px;
   padding: 5px 15px;
-  background-color: rgb(215, 183, 142, 0.5);
   border-bottom: none;
+  background-color: rgb(215, 183, 142, 0.5);
 
   visibility: visible;
 }
 
 .searchContainer input {
-  width: 260px;
-  border-radius: 5%;
   font-weight: 700;
+  width: 260px;
   color: #fff;
   text-align: center;
-  border-bottom: 1px solid rgb(234, 250, 8);
   text-transform: uppercase;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(234, 250, 8);
 }
 
 .searchContainer button {
   height: 40px;
   color: white;
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
   box-shadow: 2px 3px rgb(234, 250, 8);
 }
 
@@ -182,13 +177,10 @@ i:hover {
 }
 
 #errorDiv {
-  width: auto;
-  margin: 30px;
-  padding: 10px 20px;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 20px;
   background-color: rgba(20, 20, 20, 0.6);
   box-shadow: 2px 2px 5px black;
   border-radius: 5px;
@@ -197,30 +189,26 @@ i:hover {
 }
 
 .errorText {
-  text-align: center;
   max-width: auto;
   max-height: 300px;
+  text-align: center;
 }
 
 #dropdownList {
-  margin: 20px 30px;
-  background-color: rgba(20, 20, 20, 0.3);
-  box-shadow: 2px 2px 5px black;
-  padding: 10px 30px;
-  border-radius: 15px;
-
-  position: relative;
   display: flex;
   flex-direction: column;
   overflow: auto;
+  margin: 20px 30px;
+  padding: 10px 30px;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 15px;
+
+  background-color: rgba(20, 20, 20, 0.3);
+
   visibility: hidden;
 }
 
 .divTR {
-  max-width: auto;
-  max-height: 300px;
-
-  flex-flow: row wrap;
   text-align: center;
 }
 
@@ -239,6 +227,7 @@ i:hover {
 
 .navBTN button {
   font-size: 2vw;
+  color: rgb(1, 17, 13);
   border-radius: 4px;
 }
 
@@ -247,13 +236,14 @@ i:hover {
 }
 
 .contextInfo {
-  margin: 10px 30px;
   text-align: center;
   overflow: auto;
-  background-color: rgba(20, 20, 20, 0.6);
+  margin: 10px 20px;
+  padding: 0px 5px;
   box-shadow: 2px 2px 5px black;
-  padding: 10px;
   border-radius: 15px;
+
+  background-color: rgba(20, 20, 20, 0.6);
 }
 
 .secondPageBTNs {
@@ -262,28 +252,29 @@ i:hover {
 
 /*------------- third page style ------*/
 .contextInfoDirections {
-  margin: 100px 30px 10px;
   text-align: center;
-  background-color: rgba(20, 20, 20, 0.6);
-  box-shadow: 2px 2px 5px black;
+  margin: 100px 30px 10px;
   padding: 10px;
+  box-shadow: 2px 2px 5px black;
   border-radius: 10px;
+
+  background-color: rgba(20, 20, 20, 0.6);
 }
 
 /*--------------- fourth page style  ---------------*/
 .contextInfoError {
+  text-align: center;
   margin: 100px 30px 10px;
   padding: 10px 30px;
   box-shadow: 2px 2px 5px black;
   border-radius: 5px;
-  text-align: center;
 
   background-color: rgba(20, 20, 20, 0.6);
 }
 
 .campDiv {
   margin: 20px;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   border-radius: 15px;
 
   background-color: rgba(20, 20, 20, 0.6);
