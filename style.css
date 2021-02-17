@@ -159,7 +159,7 @@ i:hover {
 .searchContainer {
   display: flex;
   width: 310px;
-  margin: 10px 5px 10px 5px;
+  margin: 60px 5px 10px 5px;
   padding: 5px 15px;
   background-color: rgb(215, 183, 142, 0.5);
   border-bottom: none;
@@ -323,8 +323,8 @@ i:hover {
 .footer-copyright {
   width: 100%;
   margin: 0 auto;
+  color: black;
   text-align: center;
-  background-color: rgb(215, 183, 142, 0.5);
   bottom: 0;
 }
 
