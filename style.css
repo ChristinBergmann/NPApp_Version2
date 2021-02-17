@@ -295,12 +295,12 @@ i:hover {
   font-optical-sizing: auto;
   font-size: 1vw;
   border-radius: 4px;
-  padding: 20px;
+  margin-bottom: 10px;
 }
 
 #button {
-  max-width: auto;
   font-size: 2vw;
+  color: rgb(1, 17, 13);
   border-radius: 4px;
 }
 
