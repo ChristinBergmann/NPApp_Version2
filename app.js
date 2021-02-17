@@ -2,26 +2,16 @@
 
 api_Url =
   document.location.hostname === "localhost"
-    ? "http://localhost:8080/parks.json"
-    : "https://np-mobile-app-version2.netlify.app/parks.json";
+    ? "https://cors-anywhere.herokuapp.com/http://localhost:8080/parks.json"
+    : "https://cors-anywhere.herokuapp.com/https://np-mobile-app-version2.netlify.app/parks.json";
 
-fetch(
-  `${api_Url}`
-  // , {
-  // headers: {
-  //   Accept: "application/json",
-  //   "Content-Type": "application/x-www-form-urlencoded",
-  //   "Access-Control-Allow-Origin": `http://localhost:8080/parks.json`,
-  // },
-  // }
-)
+fetch(`${api_Url}`)
   .then((response) => {
     return response.json();
   })
   .then((result) => {
     console.log(result);
     let data = result.data;
-    // console.log(data);
     // console.log(data[0].images[1].url)
 
     // builds carousel + fills content:
