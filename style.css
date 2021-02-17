@@ -87,10 +87,6 @@ a {
   text-shadow: 1px 1px 1px rgb(1, 17, 13);
 }
 
-.logo-nps img {
-  background: none;
-}
-
 a:hover {
   font-size: larger;
 }
@@ -134,11 +130,8 @@ i:hover {
 }
 
 /*---------------- first page style ------------*/
-.carousel div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+.carousel {
+  height: 600px;
 }
 
 .nameImg {
@@ -152,9 +145,10 @@ i:hover {
 .searchContainer {
   display: flex;
   width: 310px;
-  margin: 60px 5px 10px 5px;
+  margin: 20px 5px 10px 5px;
   padding: 5px 15px;
   border-bottom: none;
+  border: 2px solid rgb(234, 250, 8);
   background-color: rgb(215, 183, 142, 0.5);
 
   visibility: visible;
@@ -173,6 +167,7 @@ i:hover {
 .searchContainer button {
   height: 40px;
   color: white;
+  margin-left: 10px;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 3px rgb(234, 250, 8);
@@ -180,6 +175,10 @@ i:hover {
 
 #searchInput {
   border-bottom: 1px solid rgb(234, 250, 8);
+}
+
+::placeholder {
+  color: white;
 }
 
 #errorDiv {
