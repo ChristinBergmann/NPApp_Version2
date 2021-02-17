@@ -24,7 +24,7 @@ function buildThirdPage(parks) {
   let mapsLink = document.createElement("a");
   mapsLink.setAttribute("href", parks.directionsUrl);
   mapsLink.setAttribute("target", "_blank");
-  mapsLink.innerHTML = "Directions of National Park";
+  mapsLink.innerHTML = "More Info for directions";
 
   // BACK button:
   let backButton2 = document.createElement("div");
