@@ -1,18 +1,23 @@
 html,
 body {
-  position: relative;
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
+  height: 100%;
   background: url("./Images/road_1920x1080.jpg") rgba(20, 20, 20, 0.9) no-repeat
-    center fixed;
+    center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: white;
 }
+
+/* main {
+  margin: 0 auto;
+  min-height: calc(100vh - 200px - 21px);
+} */
 
 /***------------------------- NAV BAR + HEADER ------------------***/
 .icon-white {
@@ -125,8 +130,6 @@ i:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 /*---------------- first page style ------------*/
@@ -258,7 +261,7 @@ i:hover {
 /*------------- third page style ------*/
 .contextInfoDirections {
   text-align: center;
-  margin: 100px 30px 10px;
+  margin: 150px 30px 10px;
   padding: 10px;
   box-shadow: 2px 2px 5px black;
   border-radius: 10px;
@@ -269,7 +272,7 @@ i:hover {
 /*--------------- fourth page style  ---------------*/
 .contextInfoError {
   text-align: center;
-  margin: 100px 30px 10px;
+  margin: 400px 30px 10px;
   padding: 10px 30px;
   box-shadow: 2px 2px 5px black;
   border-radius: 5px;
@@ -278,7 +281,7 @@ i:hover {
 }
 
 .campDiv {
-  margin: 20px;
+  margin: 150px 30px 10px 30px;
   padding: 5px 0px;
   border-radius: 15px;
 
