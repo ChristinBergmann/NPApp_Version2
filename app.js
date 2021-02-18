@@ -36,7 +36,9 @@ fetch(`${api_UrlProduction}`)
         });
 
         let parkType = document.createElement("figcaption");
-        parkType.innerHTML = "(" + data[i].designation + ")";
+        !data[i].designation.length
+          ? (parkType.innerHTML = "")
+          : (parkType.innerHTML = "(" + data[i].designation + ")");
 
         // work around bc no backend for imgs:
         let img = document.createElement("img");
