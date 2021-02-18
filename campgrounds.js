@@ -22,6 +22,7 @@ function buildFourthPage(event, parkCode) {
     )
     .then((result) => {
       let data = result.data;
+      console.log(data);
 
       if (data == 0) {
         // Error Div:
@@ -65,35 +66,35 @@ function buildFourthPage(event, parkCode) {
           let divCamp = document.createElement("div");
           divCamp.setAttribute("class", "contextInfo");
           let headDescriptions = document.createElement("h2");
-          headDescriptions.innerHTML = "Camp Description:";
+          headDescriptions.innerHTML = "Description:";
           let contextDescriptions = document.createElement("div");
           contextDescriptions.setAttribute("class", "contextDiv");
           let textDescriptions = document.createElement("tr");
           textDescriptions.innerHTML = camp.description;
 
-          // Camp Directions:
-          let divDirections = document.createElement("div");
-          divDirections.setAttribute("class", "contextInfo");
-          let headDirections = document.createElement("h2");
-          headDirections.innerHTML = "Camp Directions:";
-          let contextDirections = document.createElement("div");
-          contextDirections.setAttribute("class", "contextDiv");
-          let textDirections = document.createElement("p");
-          textDirections.innerHTML = camp.directionsOverview;
+          // Camp Reservations:
+          let divReservations = document.createElement("div");
+          divReservations.setAttribute("class", "contextInfo");
+          let headReservations = document.createElement("h2");
+          headReservations.innerHTML = "Reservation Information:";
+          let contextReservations = document.createElement("div");
+          contextReservations.setAttribute("class", "contextDiv");
+          let textReservations = document.createElement("p");
+          textReservations.innerHTML = camp.reservationInfo;
 
           let hr = document.createElement("hr");
           hr.style.color = "white";
           hr.style.width = "70%";
 
-          // Camp Reservations:
-          let divReservations = document.createElement("div");
-          divReservations.setAttribute("class", "contextInfo");
-          let contextReservations = document.createElement("div");
-          contextReservations.setAttribute("class", "contextDiv");
-          let linkReservations = document.createElement("a");
-          linkReservations.setAttribute("href", camp.reservationUrl);
-          linkReservations.setAttribute("target", "_blank");
-          linkReservations.innerHTML = "BOOK HERE";
+          // Camp Booking Url:
+          let divBookings = document.createElement("div");
+          divBookings.setAttribute("class", "contextInfo");
+          let contextBookings = document.createElement("div");
+          contextBookings.setAttribute("class", "contextDiv");
+          let linkBookings = document.createElement("a");
+          linkBookings.setAttribute("href", camp.reservationUrl);
+          linkBookings.setAttribute("target", "_blank");
+          linkBookings.innerHTML = "BOOK HERE";
 
           // BACK button:
           let backButton3 = document.createElement("div");
@@ -117,13 +118,13 @@ function buildFourthPage(event, parkCode) {
           divCamp.appendChild(headDescriptions);
           divCamp.appendChild(textDescriptions);
 
-          divCampHeader.appendChild(divDirections);
-          divDirections.appendChild(headDirections);
-          divDirections.appendChild(textDirections);
+          divCampHeader.appendChild(divReservations);
+          divReservations.appendChild(headReservations);
+          divReservations.appendChild(textReservations);
 
           divCampHeader.appendChild(hr);
-          divCampHeader.appendChild(divReservations);
-          divReservations.appendChild(linkReservations);
+          divCampHeader.appendChild(divBookings);
+          divBookings.appendChild(linkBookings);
 
           fourthPage.appendChild(backButton3);
           backButton3.appendChild(button3);

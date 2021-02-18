@@ -46,7 +46,7 @@ function buildSecondPage(parks) {
   let divDescription = document.createElement("div");
   divDescription.setAttribute("class", "contextInfo");
   let headDescription = document.createElement("h2");
-  headDescription.innerHTML = "Park Description:";
+  headDescription.innerHTML = "Description:";
   let contextDescription = document.createElement("div");
   contextDescription.setAttribute("class", "contextDiv");
   let textDescription = document.createElement("p");

@@ -144,7 +144,7 @@ i:hover {
 .searchContainer {
   display: flex;
   width: 310px;
-  margin: 40px 5px 10px 5px;
+  margin: 80px 5px 10px 5px;
   padding: 5px 15px;
   border-bottom: none;
   border: 2px solid rgb(234, 250, 8);
@@ -243,7 +243,7 @@ i:hover {
   text-align: center;
   overflow: auto;
   margin: 10px 20px;
-  padding: 0px 5px;
+  padding: 0px 5px 2px 5px;
   box-shadow: 2px 2px 5px black;
   border-radius: 15px;
 
