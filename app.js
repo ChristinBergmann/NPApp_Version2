@@ -103,10 +103,10 @@ function buildParkListDiv(data) {
     parkListError.setAttribute("class", "contextErrorInfo");
     parkListError.innerHTML = "";
     let listError = document.createElement("p");
-    listError.innerHTML = "Check Typing  -?-  No Parks listed";
+    listError.innerHTML = "Check Typing  <-->  No Parks listed";
     let listError1 = document.createElement("a");
     listError1.setAttribute("class", "errorText blue-text darken-3");
-    listError1.setAttribute("href", "http://nps.gov");
+    listError1.setAttribute("href", "https://www.nps.gov/index.htm");
     listError1.setAttribute("target", "_blank");
     listError1.innerHTML =
       "click HERE to check official Nat.Park Service Website";
