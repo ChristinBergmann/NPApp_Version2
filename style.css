@@ -258,7 +258,7 @@ i:hover {
   padding: 0px 20px 0px 20px;
 }
 
-/*------------- third page style ------*/
+/*--------------- third page style ----------------*/
 .contextInfoDirections {
   text-align: center;
   margin: 150px 30px 10px;
@@ -298,7 +298,7 @@ i:hover {
   padding: 7px;
 }
 
-/*------------back button------------*/
+/*-------------back button------------*/
 #backBTN {
   font-optical-sizing: auto;
   font-size: 1vw;
@@ -312,12 +312,12 @@ i:hover {
   border-radius: 4px;
 }
 
-/*------------footer--------------*/
+/*--------------footer--------------*/
 .footer-copyright {
   width: 100%;
   color: black;
   text-align: center;
-  margin-top: 400px;
+  /* margin-top: 400px; */
   bottom: 0;
 }
 
@@ -353,34 +353,31 @@ i:hover {
   }
 }
 
+/*sizes are wrong!!*/
 /* iphone 6+, 6s+, 7+, 8+ */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+/* @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
   body {
-    /* background: url("Images/redwood_640x960.jpg") no-repeat center center fixed; */
     background: url("Images/road_640x960.jpg") no-repeat center center fixed;
   }
-}
+} */
 
 /* iphone X , XS, 11 Pro */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+/* @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   body {
-    /* background: url("Images/redwood_640x960.jpg") no-repeat center center fixed; */
     background: url("Images/road_640x960.jpg") no-repeat center center fixed;
   }
-}
+} */
 
 /* iphone XR, 11 */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+/* @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
   body {
-    /* background: url("Images/redwood_640x960.jpg") no-repeat center center fixed; */
     background: url("Images/road_640x960.jpg") no-repeat center center fixed;
   }
-}
+} */
 
 /* iphone XS Max, 11 Pro Max */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+/* @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
   body {
-    /* background: url("Images/redwood_640x960.jpg") no-repeat center center fixed; */
     background: url("Images/road_640x960.jpg") no-repeat center center fixed;
   }
-}
+}    */
