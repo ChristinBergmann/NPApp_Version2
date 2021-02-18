@@ -10,8 +10,8 @@ api_Url =
     ? "http://localhost:8080/parks.json"
     : "https://np-mobile-app-version2.netlify.app/parks.json";
 
-fetch(`${api_UrlProduction}`)
-  // fetch(`${api_Url}`)
+// fetch(`${api_UrlProduction}`)
+fetch(`${api_Url}`)
   .then((response) => {
     return response.json();
   })
