@@ -108,7 +108,8 @@ function buildParkListDiv(data) {
     listError1.setAttribute("class", "errorText blue-text darken-3");
     listError1.setAttribute("href", "http://nps.gov");
     listError1.setAttribute("target", "_blank");
-    listError1.innerHTML = "click HERE for official National Park Service HP";
+    listError1.innerHTML =
+      "click HERE to check official Nat.Park Service Website";
 
     parkListError.appendChild(listError);
     parkListError.appendChild(listError1);
