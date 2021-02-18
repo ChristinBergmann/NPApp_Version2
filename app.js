@@ -1,11 +1,17 @@
 ////////--------------------------------   BUILDS FIRST PAGE // (Fetch Data,Carousel,Search Input(List Of Parks,Error Div))  ----------------------------------------//////////////////
 
-api_Url =
+api_UrlProduction =
   document.location.hostname === "localhost"
     ? "https://cors-anywhere.herokuapp.com/http://localhost:8080/parks.json"
     : "https://cors-anywhere.herokuapp.com/https://np-mobile-app-version2.netlify.app/parks.json";
 
-fetch(`${api_Url}`)
+api_Url =
+  document.location.hostname === "localhost"
+    ? "http://localhost:8080/parks.json"
+    : "https://np-mobile-app-version2.netlify.app/parks.json";
+
+fetch(`${api_UrlProduction}`)
+  // fetch(`${api_Url}`)
   .then((response) => {
     return response.json();
   })
