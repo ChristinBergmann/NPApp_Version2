@@ -21,6 +21,7 @@ function buildFourthPage(_event, parkCode) {
       }
     )
     .then((result) => {
+      console.log(result);
       let data = result.data;
       console.log(data);
 
