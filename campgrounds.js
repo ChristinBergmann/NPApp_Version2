@@ -1,6 +1,6 @@
 /////////-----------------------------------------------------  BUILDS FOURTH PAGE  ----------------------------------------------////////////////
 
-function buildFourthPage(event, parkCode) {
+function buildFourthPage(_event, parkCode) {
   // console.log(event);
   // console.log(parkCode);
 
