@@ -1,5 +1,4 @@
 /////////-----------------------------------------------------  BUILDS FOURTH PAGE  ----------------------------------------------////////////////
-API_key;
 
 function buildFourthPage(event, parkCode) {
   // console.log(event);
@@ -10,7 +9,8 @@ function buildFourthPage(event, parkCode) {
 
   //fetch live data of specific campground:
   fetch(
-    `https://developer.nps.gov/api/v1/campgrounds?&api_key=${API_key}&parkCode=${parkCode}`
+    // `https://developer.nps.gov/api/v1/campgrounds?&api_key=${API_key}&parkCode=${parkCode}`
+    `https://developer.nps.gov/api/v1/campgrounds?&api_key="UCcaROnkHhpTe93hJuaNLFUa6mxmAN1hOPIgmHyn"&parkCode=${parkCode}`
   )
     .then(
       (response) => {
