@@ -64,6 +64,26 @@ function buildSecondPage(parks) {
   textWeather.setAttribute("href", parks.weatherInfo); // pure link works but not if its w text or just "a"tag
   textWeather.setAttribute("target", "_blank");
 
+  // Park Fees:
+  let divFeeDescription = document.createElement("div");
+  divFeeDescription.setAttribute("class", "contextInfo");
+  let headFeeDescription = document.createElement("h2");
+  headFeeDescription.innerHTML = "Entrance Information:";
+  let contextFeeDiv = document.createElement("div");
+  contextFeeDiv.setAttribute("class", "contextDiv");
+  //loop to add
+  let textFeeTitle = document.createElement("p");
+  textFeeTitle.setAttribute("class", "fee-textcolor");
+  textFeeTitle.innerHTML = parks.entranceFees[0].title;
+  let textFeeCost = document.createElement("p");
+  textFeeCost.setAttribute("class", "fee-textcolor");
+  textFeeCost.innerHTML = " $ " + parks.entranceFees[0].cost;
+  let hr = document.createElement("hr");
+  hr.style.color = "white";
+  hr.style.width = "40%";
+  let textFeeDescription = document.createElement("p");
+  textFeeDescription.innerHTML = parks.entranceFees[0].description;
+
   // BACK button:
   let backButton1 = document.createElement("div");
   backButton1.setAttribute("id", "backBTN");
@@ -95,6 +115,14 @@ function buildSecondPage(parks) {
   divWeather.appendChild(headWeather);
   divWeather.appendChild(contextWeather);
   contextWeather.appendChild(textWeather);
+
+  divParkHeader.appendChild(divFeeDescription);
+  divFeeDescription.appendChild(headFeeDescription);
+  divFeeDescription.appendChild(contextFeeDiv);
+  contextFeeDiv.appendChild(textFeeTitle);
+  contextFeeDiv.appendChild(textFeeCost);
+  contextFeeDiv.appendChild(hr);
+  contextFeeDiv.appendChild(textFeeDescription);
 
   secondPage.appendChild(backButton1);
   backButton1.appendChild(button1);

@@ -2,9 +2,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* width: 100vw;
-  height: 100vh; */
-  /* height: 100%; */
   background: url("./Images/road_1920x1080.jpg") rgba(20, 20, 20, 0.9) no-repeat
     center;
   -webkit-background-size: cover;
@@ -248,6 +245,10 @@ i:hover {
   border-radius: 15px;
 
   background-color: rgba(20, 20, 20, 0.6);
+}
+
+.fee-textcolor {
+  color:rgb(21, 110, 203);
 }
 
 .secondPageBTNs {

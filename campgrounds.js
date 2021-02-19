@@ -25,7 +25,7 @@ function buildFourthPage(_event, parkCode) {
       let data = result.data;
       console.log(data);
 
-      if (!data) {
+      if (data == 0) {
         // Error Div:
         let divErrorCamp = document.createElement("div");
         divErrorCamp.setAttribute("class", "contextInfoError");
