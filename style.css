@@ -14,10 +14,10 @@ body {
   color: white;
 }
 
-/* main {
+main {
   margin: 0 auto;
   min-height: calc(100vh - 200px - 21px);
-} */
+}
 
 /***------------------------- NAV BAR + HEADER ------------------***/
 .icon-white {
