@@ -10,7 +10,7 @@ function buildFourthPage(_event, parkCode) {
   //fetch live data of specific campground:
   fetch(
     // `https://developer.nps.gov/api/v1/parkss?parkCode=${parkCode}&api_key=${API_key}`
-    `https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key="UCcaROnkHhpTe93hJuaNLFUa6mxmAN1hOPIgmHyn"`
+    `https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key="jfkc5eaB5sfBWCxmj9Llsq9GB9HYbHR0qxofLxlm"`
   )
     .then(
       (response) => {
