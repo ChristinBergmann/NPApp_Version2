@@ -25,7 +25,7 @@ function buildFourthPage(_event, parkCode) {
       let data = result.data;
       console.log(data);
 
-      if (data == 0) {
+      if (!data) {
         // Error Div:
         let divErrorCamp = document.createElement("div");
         divErrorCamp.setAttribute("class", "contextInfoError");
@@ -54,7 +54,7 @@ function buildFourthPage(_event, parkCode) {
         document.getElementById("secondPage").classList.remove("active");
         document.getElementById("thirdPage").classList.remove("active");
       } else {
-        data.forEach(function (camp) {
+        data.forEach((camp) => {
           console.log(camp);
 
           // Camp Name:
